@@ -189,6 +189,8 @@ python run.py -c /path/to/config.json
 
 - 使用init.d和crontab:
 `sudo ./task.sh`
+`crontab -e`
+`*/1 * * * *   root    "/root/DDNS-master/run.py" -c "/root/DDNS-master/config.json" &gt; /dev/null 2>&1 &`
 - 使用systemd:
     ```bash
     安装:
